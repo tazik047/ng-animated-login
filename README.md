@@ -1,6 +1,5 @@
 # Angular Animated Login
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+This project now targets [Angular](https://angular.dev) version 18 and was updated using the Angular CLI 18 toolchain.
 
 ## Live demo
 
@@ -9,6 +8,13 @@ http://ng-animated-login.surge.sh/
 
 ![demo](https://user-images.githubusercontent.com/4145169/36626729-dcb2fbb4-195d-11e8-9f26-37a20937a48f.gif)
 
+
+## Getting started
+
+1. Install dependencies with `npm install`.
+2. Launch the dev server with `npm start` and open `http://localhost:4200/` in your browser.
+
+Both commands rely on the Angular CLI and will automatically reload the app when source files change.
 
 ## Development server
 
@@ -20,15 +26,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `ng build --configuration production` for an optimised production build.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
