@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+
+declare global {
+  interface Window {
+    initialize?: () => void;
+  }
+}
 
 import '../assets/login-animation.js';
 
@@ -7,16 +13,17 @@ import '../assets/login-animation.js';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  email: string;
-  password: string;
+export class AppComponent implements AfterViewInit {
+  email = '';
+  password = '';
 
-  ngAfterViewInit() {
-    (window as any).initialize();
+  ngAfterViewInit(): void {
+    window.initialize?.();
   }
 
-  login(){
-    console.log(`email: ${this.email} password: ${this.password}`)
-    alert(`Email: ${this.email} Password: ${this.password}`)
+  login(): void {
+    // eslint-disable-next-line no-console
+    console.log(`email: ${this.email} password: ${this.password}`);
+    alert(`Email: ${this.email} Password: ${this.password}`);
   }
 }
