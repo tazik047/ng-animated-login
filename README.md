@@ -9,6 +9,13 @@ http://ng-animated-login.surge.sh/
 ![demo](https://user-images.githubusercontent.com/4145169/36626729-dcb2fbb4-195d-11e8-9f26-37a20937a48f.gif)
 
 
+## Getting started
+
+1. Install dependencies with `npm install`.
+2. Launch the dev server with `npm start` and open `http://localhost:4200/` in your browser.
+
+Both commands rely on the Angular CLI and will automatically reload the app when source files change.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
